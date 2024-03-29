@@ -1,0 +1,48 @@
+.dinasours-body {
+    background-color: #8d6e48;
+}
+
+.dinasours-login {
+    background-image: url("../images/dinasour-login-bg.jpg");
+    background-size: cover;
+}
+
+.dinasours-login label,
+.dinasours-calculator label {
+    color: #303a40;
+}
+
+.dinasours-login button {
+    background-color: #303a40;
+    color: #f8ffd2;
+    opacity: 0.7;
+}
+
+.dinasours-login button:hover {
+    background-color: #f8ffd2;
+    color: #303a40;
+    transition: 0.3s;
+}
+
+.dinasours-login button:active {
+    background-color: #1d2327;
+    color: #f8ffd2;
+}
+
+.dinasours-calculator {
+    background-image: url("../images/dinasour-calc-bg.jpg");
+    background-size: cover;
+    background-position: -130px;
+}
+
+.dinasours-info {
+    background-color: #bF9d73;
+    color: #303a40;
+}
+@media (min-width:700px) {
+
+    .dinasours-calculator {
+        background-position: 0;
+    }
+
+}

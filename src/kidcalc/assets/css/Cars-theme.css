@@ -1,0 +1,41 @@
+.cars-body {
+    background-color: red;
+}
+
+.cars-login {
+    background-image: url("../images/cars-login-bg.jpg");
+    background-size: cover;
+}
+
+.cars-login label,
+.cars-calculator label {
+    color: #fff;
+}
+
+.cars-login button {
+    background-color: red;
+    color: #f8ffd2;
+    opacity: 0.7;
+}
+
+.cars-login button:hover {
+    background-color: #bd2323;
+    transition: 0.3s;
+}
+
+.cars-login button:active {
+    background-color: #ff0000;
+    color: #f1f1f1;
+}
+
+.cars-calculator {
+    background-image: url("../images/cars-calc-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cars-info {
+    background-color: #ca1212;
+    color: white;
+    opacity: 0.7;
+}

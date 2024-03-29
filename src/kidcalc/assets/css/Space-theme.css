@@ -1,0 +1,42 @@
+.space-body {
+    background-image: url("../images/space-bg.jpg");
+}
+
+.space-login {
+    background-image: url("../images/space-login-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.space-login label,
+.space-calculator label {
+    color: #fffcfc;
+}
+
+.space-login button {
+    background-color: #f8ffd2;
+    color: #1b191a;
+    opacity: 0.7;
+}
+
+.space-login button:hover {
+    background-color: #fff;
+    color: #1b191a;
+    transition: 0.3s;
+}
+
+.space-login button:active {
+    background-color: #201e1f;
+    color: #fff;
+}
+
+.space-calculator {
+    background-image: url("../images/space-calc-bg.jpg");
+    background-size: cover;
+}
+
+.space-info {
+    background-color: #030303;
+    color: #fefff7;
+    opacity: 0.8;
+}

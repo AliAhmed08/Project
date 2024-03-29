@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>kidcalc</title>
+</head>
+
+<body class="body">
+
+    <div class="container">
+
+        <div id="login" class="login">
+
+            <label for="Name">Name:<input type="text" placeholder="Your Name" id="name" required></label>
+
+            <label for="Age">Age:<input type="number" placeholder="Your Age" min="1" required></label>
+
+            <label for="Theme">
+                Theme: 
+                <select name="themes" id="select">
+                    <option selected>Default</option>
+                    <option>Dinasours</option>
+                    <option>Space</option>
+                    <option>Cars</option>
+                </select>
+            </label>
+
+            <button onclick="welcome(), theme()">Submit</button>
+
+        </div>
+
+        <div id="calculator" class="calculator">
+
+            <label for="Eqation">Eqation: <input type="text"></label>
+
+            <label for="Answer">Answer: <input type="text"></label>
+
+            <div class="calc-buttons">
+
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button class="operator">C</button>
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="operator">+</button>
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="operator">-</button>
+                <button class="operator">></button>
+                <button class="num">0</button>
+                <button class="operator"><</button>
+                <button class="operator">=</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="info" class="info">
+
+        <p id="welcome"></p>
+        <p>Number of correct answers: 0</p>
+
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

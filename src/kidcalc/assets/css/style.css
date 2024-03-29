@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("dinasour-theme.css");
+@import url("Space-theme.css");
+@import url("Cars-theme.css");
+
+body {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1.1px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6141c2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 30px 10px 10px;
+    margin: 5px 10px;
+}
+
+.login {
+    background-color: #433179;
+    color:#ffe5e5;
+}
+
+#login label {
+    font-size: 20px;
+    font-weight: 500;
+    align-self: start;
+}
+
+input, select {
+    background-color: #dac7c7;
+    opacity: 0.7;
+    border: 1px solid #3f3e3e;
+    margin: 12px;
+    padding: 10px 30px;
+    width: 190px;
+    border: none;
+    border-radius: 20px;
+}
+
+#login button {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    padding: 9px 50px;
+    cursor: pointer;
+}
+
+.login label, .calculator label {
+    color: #f8ffd2;
+}
+
+.login button {
+    color: #f8ffd2;
+    background-color: #82cd47;
+}
+
+.login button:hover {
+    background-color: #b3ff79;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.login button:active {
+    background-color: #579e20;
+    color: #fff;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 30px;
+    margin: 10px 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.calculator {
+    background-color: #433179;
+}
+
+#calculator label {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.calc-buttons button {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 7px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #e0aed0;
+    color: #433179;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+    height: 300px;
+}
+
+.calc-buttons .num {
+    background-color: #e5b3d6;
+    color: #433179;
+    opacity: 0.8;
+}
+
+.calc-buttons .num:hover {
+    background-color: #fff;
+    color: #491bd3;
+    transition: 0.2s;
+}
+
+.calc-buttons .num:active {
+    background-color: #c2bfbf;
+    color: #2e00b8;
+}
+
+.calc-buttons .operator {
+    background-color: #b5b999;
+    color: #1b191a;
+    opacity: 0.7;
+}
+
+.calc-buttons .operator:hover {
+    background-color: #f0f1e5;
+    color: #0f0e0f;
+    transition: 0.2s;
+}
+
+.calc-buttons .operator:active {
+    background-color: #585258;
+    color: #f0f1e5;
+}
+
+#info {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 40px 40px 0 0;
+    padding: 8px;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    margin-top: auto;
+}
+
+.info {
+    background-color: #433179;
+    color: #f8ffd2;
+}
+
+#info p {
+    margin: 4px;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1100px)  {
+    
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #login, #calculator{
+        padding: 50px;
+        margin: 30px;
+        width: 70%;
+    }
+
+    #login label {
+        font-size: 40px;
+    }
+
+    input, select {
+        margin: 15px;
+        padding: 15px;
+        width: 500px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #login button {
+        margin-top: 40px;
+        font-size: 25px;
+        padding: 10px 60px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width:1100px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 72px 30px;
+    }
+
+    #login {
+        display: inline-block;
+        padding: 30px;
+        width: 50%;
+    }
+
+    #login label {
+        font-size: 40px;
+    }
+
+    input, select {
+        margin: 15px;
+        padding: 15px;
+        width: 80%;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #login button {
+        margin-top: 40px;
+        font-size: 25px;
+        padding: 10px 60px;
+        text-align: center;
+    }
+
+    #calculator {
+        width: 50%;
+    }
+
+}
